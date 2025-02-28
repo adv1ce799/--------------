@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+  }
+
+main{
+    flex: 1;
+  }
+
+.bg {
+  background-repeat: repeat-y;
+}
+
+.conteiner{
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color:rgba(255, 228, 205, 0.781);
+    position: sticky;
+  }
+
+.menu_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.nav{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.nav li a{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 14pt;
+  }
+
+.nav li a:hover{
+    background-color: rgb(215, 215, 215);
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 10px;
+  }
+
+.nav li{
+    margin: 0px;
+    padding-left: 25px;
+    margin-right: 300px;
+  }
+
+.logo{
+    margin-left: 40px;
+  }
+
+.logo img{
+    width: 150px;
+    height: 150px;
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  }
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 228, 205, 0.781);
+    bottom: 0;
+  }
+
+footer p{
+    text-align: center;
+    margin: 5px;
+  }
+
+.fon {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  
+}
+
+.opisanie {
+  position: absolute;
+  width: 320px;
+  height: 280px;
+  background-color: rgba(255, 228, 205, 0.9);
+  margin: 50px 750px;
+  border-radius: 20px;
+  transform: translateY(-5px);
+  box-shadow:  0px 15px 20px 2px gray;
+  padding: 10px;
+  border: 4px solid rgba(228, 185, 147, 0.76);
+}
+
+.opisanie p {
+  font-size: 15pt;
+  text-align: center;
+}
+
+.opisanie2 {
+  position: absolute;
+  width: 320px;
+  height: 280px;
+  background-color: rgba(255, 228, 205, 0.90);
+  margin: 310px 400px ;
+  border-radius: 20px;
+  transform: translateY(5px);
+  box-shadow: inset 0px 7px 15px 7px  rgb(128, 128, 128, 0.856);
+  padding: 10px;
+  
+}
+
+.opisanie2 p {
+  font-size: 15pt;
+  text-align: center;
+}
+.bazeh1 {
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-left: 650px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+}
+
+.drevo img {
+  margin-top: -30px; 
+  position: absolute;
+  width: 100%;
+  height: 900px;
+}
+
+.opisanie3 {
+  position: absolute;
+  width: 300px;
+  height: 280px;
+  background-color: rgba(255, 228, 205, 0.90);
+  margin: 310px 1110px ;
+  border-radius: 20px;
+  transform: translateY(5px);
+  box-shadow: inset 5px 10px 15px 7px  rgba(128, 128, 128, 0.856);
+  padding: 10px;
+  
+}
+
+.opisanie3 p {
+  font-size: 15pt;
+  text-align: center;
+}

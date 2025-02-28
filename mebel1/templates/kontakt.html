@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Наши контакты{% endblock %}
+{% block contents %}
+</head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/kontakt.css' %}" />
+<head>
+<style>
+    .kontakt{
+        background-color: rgb(215, 215, 215);
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px gray;
+    }
+</style>
+<body>
+    <div class="box">
+        <h1>Контактные данные</h1>
+        <img class="phone" src="{% static 'img/phone.png'%}"/>
+        <p class="phonep"><b>Позвони нам</b></p>
+        <p class="phonep1">Есть вопросы? Мы готовы вам помочь! <br> Телефон Единой Информационной Службы: <br><br>
+        +7 (960) 082-55-78 <br>
+        +7 (987) 267-05-50<br>
+        Ежедневно с 08:00 до 21:00
+        </p>
+        
+        <img class="massage" src="{% static 'img/massage.png'%}"/>
+        <p class="massagep"><b>Напишите в чат</b></p>
+        <p class="massagep1">Быстро получить ответ на свой вопрос вы можете, обратившись в наши социальные сети.</p>
+        <p class="massagep2"></p>
+        <img class="tg" src="{% static 'img/tg.png'%}"/>
+        <p class="tgp">@MebelMax116</p>
+        <img class="inst" src="{% static 'img/insta.png'%}"/>
+        <p class="instp">@MebelMax116</p>
+    </div>
+</body>
+
+{% endblock %}

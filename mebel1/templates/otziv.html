@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Отзывы клиентов{% endblock %}
+{% block contents %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/otziv.css' %}">
+</head>
+<style>
+      .otziv{
+          background-color: rgb(215, 215, 215);
+          border-radius: 10px;
+          box-shadow: 3px 3px 3px gray;
+      }
+  </style>
+<body>
+    <h1>Ваш отзыв</h1>
+
+    <div class="coment">
+        <form action="{% url 'otziv' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Оставить отзыв</button>
+        </form>
+    </div>
+
+
+    <h2>Отзовы пользователей:</h2>
+
+    <div class="coment2">
+        
+        <ul class="box1">
+            {% for comment in comments %}
+                <li class="com">
+                    <strong>{{ comment.name }}</strong>: {{ comment.text }} <em>{{ comment.created_at }}</em>
+                </li>
+            {% empty %}
+                <li>Нет комментариев.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+</body>
+{% endblock %}

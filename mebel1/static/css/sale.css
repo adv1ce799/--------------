@@ -1,0 +1,262 @@
+.text1{
+    margin-top: 270px;
+}
+
+* {
+   margin: 0;
+}
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.kartochkaA{
+  margin: 10px auto;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.kartochka {
+  height: 320px;
+  width: 250px;
+  background-color: rgba(255, 228, 205, 0.90);
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.9);
+  background-color: rgba(255, 228, 205, 0.90);
+  border: 4px solid rgba(228, 185, 147, 0.76);
+}
+
+.kartinka{
+  width: 200px;
+  height: 200px;
+}
+
+.kartinkadiv{
+  margin: 10px;
+  width: 180px;
+  height: 160px;
+  overflow: hidden;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.catalog{
+  position: absolute;
+  /* position: relative; */
+  display: flex; 
+  padding: 20px;
+  margin: 20px 400px;
+  flex-wrap: wrap;
+  
+}
+
+.cr h3{
+  margin: 20px; 
+  font-size: 15pt;
+}
+
+.cr p {
+  font-size: 13pt;
+}
+
+.menu-kat {
+  position: absolute;
+  margin-left: 40px;
+}
+
+.kategori {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.9);
+  background-color: rgba(255, 228, 205, 0.90);
+  border: 4px solid rgba(228, 185, 147, 0.76);
+}
+
+.menu-kat h2 {
+  position: relative;
+  background-color: rgba(255, 228, 205, 0.90);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.9);
+  margin-top: 40px;
+  border: 4px solid rgba(228, 185, 147, 0.76);
+}
+
+.kategori li {
+  text-align: left;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.kategori li a{
+  font-family:'Times New Roman', Times, serif;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  font-size: 16pt;
+  padding: 5px;
+  color: black;
+}
+
+.LDSP {
+  position: fixed;
+  width: 250px;
+  height: 530px;
+  margin-top: 50px;
+  margin-left: 1550px;
+  border-radius: 10px;
+  background-color: rgba(255, 228, 205, 0.90);
+  box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.9);
+  border: 4px solid rgba(228, 185, 147, 0.76);
+
+}
+
+.LDSP h2 {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.LDSP1 {
+  border: 2px solid black;
+  width: 70px;
+  height: 70px;
+  margin-left: 40px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.p1 {
+  position: absolute;
+  margin-left: 51px;
+  font-size: 14pt;
+}
+
+.LDSP2 {
+  position: absolute;
+  border: 2px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+
+}
+
+.p2 {
+  position: absolute;
+  margin-left: 145px;
+  font-size: 14pt;
+}
+
+.LDSP3 {
+  position: absolute;
+  border: 2px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: -76px;
+  margin-top: 125px;
+  border-radius: 50%;
+
+}
+
+.p3 {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 110px;
+  font-size: 14pt;
+}
+
+.LDSP4 {
+  position: absolute;
+  border: 2px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: 30px;
+  margin-top: 125px;
+  border-radius: 50%;
+
+}
+
+.p4 {
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 110px;
+  font-size: 14pt;
+}
+
+.LDSP5 {
+  position: absolute;
+  border: 2px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: -76px;
+  margin-top: 245px;
+  border-radius: 50%;
+
+}
+
+.p5 {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 230px;
+  font-size: 14pt;
+}
+
+.LDSP6 {
+  position: absolute;
+  border: 2px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: 30px;
+  margin-top: 245px;
+  border-radius: 50%;
+
+}
+
+.p6 {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 230px;
+  font-size: 14pt;
+}
+
+.LDSP7 {
+  position: absolute;
+  border: 2px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: -76px;
+  margin-top: 360px;
+  border-radius: 50%;
+
+}
+
+.p7 {
+  position: absolute;
+  margin-left: 120px;
+  font-size: 14pt;
+  margin-left: 40px;
+  margin-top: 343px;
+}
+
+.LDSP8 {
+  position: absolute;
+  border: 2px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: 30px;
+  margin-top: 360px;
+  border-radius: 50%;
+
+}
+
+.p8 {
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 343px;
+  font-size: 14pt;
+}

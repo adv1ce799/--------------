@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Ассортимент{% endblock %}
+{% block contents %}
+</head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sale.css' %}" />
+<head>
+  <style>
+    .sale{
+        background-color: rgb(215, 215, 215);
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px gray;
+    }
+</style>
+<body>
+  
+  <div class="menu-kat">
+    <h2>Категории</h2>
+    <ul class="kategori">
+      {% for category in categories %}
+          <li><a href="{% url 'category' category.id %}">{{ category.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+<div class="catalog">
+    {% for card in goods %}
+      <a href="{% url 'product' card.slug %}" class="kartochkaA">
+          <div class="kartochka">
+              <div class="cr">
+                  <div class="kartinkadiv">
+                        <img class="kartinka" src="{{ card.image.url }}" alt="{{ card.title }}">
+                  </div>
+                  <h3>{{ card.title }}</h3>
+                  <p>Категория: {{ card.category.name }}</p>
+                  <p>Цена от: {{ card.price }} руб</p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+    </div>
+
+    <div class="LDSP">
+      <h2>Цвета ЛДСП</h2>
+      <img class="LDSP1" src="{% static 'img/Ясень.png'%}"/> <p class="p1">Ясень</p>
+      <img class="LDSP2" src="{% static 'img/Шимо светлый.png'%}"/> <P class="p2">Шимо св</P>
+      <img class="LDSP3" src="{% static 'img/шимо тёмный.jpeg'%}"/> <P class="p3">Шимо тёмный</P>
+      <img class="LDSP4" src="{% static 'img/Венге.png'%}"/> <P class="p4">Венге</P>
+      <img class="LDSP5" src="{% static 'img/Дуб.png'%}"/> <P class="p5">Дуб</P>
+      <img class="LDSP6" src="{% static 'img/Финдус.png'%}"/> <P class="p6">Финдус</P>
+      <img class="LDSP7" src="{% static 'img/Анкор светлый.png'%}"/> <P class="p7">Анкор св</P>
+      <img class="LDSP8" src="{% static 'img/Каспий светлый.png'%}"/> <P class="p8">Каспий св</P>
+    </div>
+</body>
+
+{% endblock %}

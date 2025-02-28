@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{post.title}}{% endblock %}
+{% block contents %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/product.css' %}">
+</head>
+<body>
+
+  <a href="{% url 'sale' %}" class="nazad">К ассортименту</a>
+  <div class="block">
+    <img src="{{ post.image.url }}" alt="" class="productImg">
+    <h1 class="zagolovok">{{post.title}}</h1>
+    <p class="info">{{post.information}}</p>
+    <p class="denga">Цена от: {{post.price}}</p>
+  </div>
+
+  <div class="obhod"></div>
+
+</body>
+{% endblock %}
